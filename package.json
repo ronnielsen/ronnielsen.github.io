@@ -1,5 +1,5 @@
 {
-  "homepage": "https://365smart.github.io/product-design/",
+  "homepage": "https://ronnielsen.github.io/design-system/",
   "name": "product-design",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b gh-pages -r git@github.com:365smart/product-design.git",
+    "deploy": "gh-pages -d build -b gh-pages -r git@github.com:ronnielsen/design-system.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
