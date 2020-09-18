@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -11,7 +11,7 @@ import theme from './theme';
 function App(props) {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/">
         <Switch>
           <Route exact path="/">
             <Home/>
@@ -26,9 +26,6 @@ function App(props) {
       </Router>
     </ThemeProvider>
   );
-
-
-
 }
 
 export default App;
