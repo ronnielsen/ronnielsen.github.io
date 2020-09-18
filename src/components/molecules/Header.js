@@ -47,9 +47,9 @@ const Name = styled(Link)`
 function Header(props) {
   return (
     <Container bg="dark" color="white" p="xs">
-      <Name to="/">Ron Nielsen</Name>
-      <StyledLink to="/process">My process</StyledLink>
-      <StyledLink to="/resume">Resume</StyledLink>
+      <Name to="/portfolio">Ron Nielsen</Name>
+      <StyledLink to="/portfolio/process">My process</StyledLink>
+      <StyledLink to="/portfolio/resume">Resume</StyledLink>
     </Container>
   );
 }

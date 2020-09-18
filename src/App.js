@@ -11,15 +11,15 @@ import theme from './theme';
 function App(props) {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/portfolio">
             <Home/>
           </Route>
-          <Route path="/process">
+          <Route path="/portfolio/process">
             <Process/>
           </Route>
-          <Route path="/resume">
+          <Route path="/portfolio/resume">
             <Resume/>
           </Route>
         </Switch>
