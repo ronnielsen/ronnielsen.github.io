@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/crop</title>
+    <defs>
+        <path d="M23,17 L19,17 L19,8 C19,6.3 17.7,5 16,5 L7.1,5.1 L7.1,1 C7.1,0.4 6.7,0 6.1,0 C6.1,0 6.1,0 6.1,0 C5.6,0 5.1,0.4 5.1,1 L5.1,5.1 L1,5.1 C0.4,5.1 0,5.6 0,6.1 C0,6.6 0.5,7.1 1,7.1 C1,7.1 1,7.1 1,7.1 L5.1,7.1 L5,16 C5,17.7 6.3,19 8,19 L17,19 L17,23 C17,23.6 17.4,24 18,24 C18.6,24 19,23.6 19,23 L19,19 L23,19 C23.6,19 24,18.6 24,18 C24,17.4 23.6,17 23,17 Z M8,17 C7.4,17 7,16.6 7,16 L7.1,7.1 L16,7 C16.6,7 17,7.4 17,8 L17,17 L8,17 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/crop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/chevron-left</title>
+    <defs>
+        <path d="M15.7,17.3 C16.1,17.7 16.1,18.3 15.7,18.7 C15.5,18.9 15.3,19 15,19 C14.7,19 14.5,18.9 14.3,18.7 L8.3,12.7 C7.9,12.3 7.9,11.7 8.3,11.3 L14.3,5.3 C14.7,4.9 15.3,4.9 15.7,5.3 C16.1,5.7 16.1,6.3 15.7,6.7 L10.4,12 L15.7,17.3 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/chevron-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/airplay</title>
+    <defs>
+        <path d="M20,18 L19,18 C18.4,18 18,17.6 18,17 C18,16.4 18.4,16 19,16 L20,16 C20.6,16 21,15.6 21,15 L21,5 C21,4.4 20.6,4 20,4 L4,4 C3.4,4 3,4.4 3,5 L3,15 C3,15.6 3.4,16 4,16 L5,16 C5.6,16 6,16.4 6,17 C6,17.6 5.6,18 5,18 L4,18 C2.3,18 1,16.7 1,15 L1,5 C1,3.3 2.3,2 4,2 L20,2 C21.7,2 23,3.3 23,5 L23,15 C23,16.7 21.7,18 20,18 Z M17.9,21.4 C18.1,21 18,20.6 17.8,20.3 L12.8,14.3 C12.4,13.8 11.6,13.8 11.3,14.3 L6.3,20.3 C6.1,20.6 6,21 6.2,21.4 C6.3,21.8 6.6,22 7,22 L17,22 C17.4,22 17.7,21.8 17.9,21.4 Z M12,16.6 L14.9,20 L9.1,20 L12,16.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/airplay" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

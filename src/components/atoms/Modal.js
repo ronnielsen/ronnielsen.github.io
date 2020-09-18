@@ -9,8 +9,7 @@ import {
   space,
   flexbox,
   border,
-  typography,
-  variant
+  typography
 } from 'styled-system';
 
 const StyledDiv = styled(Div)(
@@ -31,17 +30,6 @@ const StyledDiv = styled(Div)(
   flexbox,
   border,
   typography,
-  variant({
-    variants: {
-      // xs: {
-      //   px: 'xs',
-      //   py: 'xxs',
-      //   fontSize: 'xs',
-      //   lineHeight: 'xs',
-      //   borderRadius: 'md',
-      // },
-    }
-  })
 );
 
 
@@ -55,8 +43,6 @@ function Modal(props) {
 }
 
 Modal.propTypes = {
-  /** Image type */
-  variant: PropTypes.string,
   /** File location of the image starting within the img folder */
   location: PropTypes.string,
   /** File name for use and alt name */

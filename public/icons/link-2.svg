@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/link-2</title>
+    <defs>
+        <path d="M10,17 C10,17.6 9.6,18 9,18 L6,18 C2.7,18 0,15.3 0,12 C0,8.7 2.7,6 6,6 L9,6 C9.6,6 10,6.4 10,7 C10,7.6 9.6,8 9,8 L6,8 C3.8,8 2,9.8 2,12 C2,14.2 3.8,16 6,16 L9,16 C9.6,16 10,16.4 10,17 Z M18,6 L15,6 C14.4,6 14,6.4 14,7 C14,7.6 14.4,8 15,8 L18,8 C20.2,8 22,9.8 22,12 C22,14.2 20.2,16 18,16 L15,16 C14.4,16 14,16.4 14,17 C14,17.6 14.4,18 15,18 L18,18 C21.3,18 24,15.3 24,12 C24,8.7 21.3,6 18,6 Z M7,12 C7,12.6 7.4,13 8,13 L16,13 C16.6,13 17,12.6 17,12 C17,11.4 16.6,11 16,11 L8,11 C7.4,11 7,11.4 7,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/link-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

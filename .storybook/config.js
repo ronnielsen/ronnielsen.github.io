@@ -13,7 +13,7 @@ const Story = styled.div`
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 40px;
     width: 100%;
   }
 `;

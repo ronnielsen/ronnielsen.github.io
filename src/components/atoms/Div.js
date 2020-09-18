@@ -31,16 +31,7 @@ import {
 
 const StyledDiv = styled('div')(
   {
-    // ${color}
-    // ${space}
-    // ${border}
-    // ${typography}
-    // ${layout}
-    // ${shadow}
-    // ${flexbox}
-    // ${grid}
-    // ${position}
-    // ${background}
+    boxSizing: 'border-box',
   },
   color,
   space,

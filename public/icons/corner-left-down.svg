@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/corner-left-down</title>
+    <defs>
+        <path d="M21,4 C21,4.6 20.6,5 20,5 L13,5 C11.3,5 10,6.3 10,8 L10,17.6 L13.3,14.3 C13.7,13.9 14.3,13.9 14.7,14.3 C15.1,14.7 15.1,15.3 14.7,15.7 L9.7,20.7 C9.6,20.8 9.5,20.9 9.4,20.9 C9.3,21 9.1,21 9,21 C8.9,21 8.7,21 8.6,20.9 C8.5,20.8 8.4,20.8 8.3,20.7 L3.3,15.7 C2.9,15.3 2.9,14.7 3.3,14.3 C3.7,13.9 4.3,13.9 4.7,14.3 L8,17.6 L8,8 C8,5.2 10.2,3 13,3 L20,3 C20.6,3 21,3.4 21,4 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/corner-left-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

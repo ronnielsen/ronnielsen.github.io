@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/type</title>
+    <defs>
+        <path d="M21,4 L21,7 C21,7.6 20.6,8 20,8 C19.4,8 19,7.6 19,7 L19,5 L13,5 L13,19 L15,19 C15.6,19 16,19.4 16,20 C16,20.6 15.6,21 15,21 L9,21 C8.4,21 8,20.6 8,20 C8,19.4 8.4,19 9,19 L11,19 L11,5 L5,5 L5,7 C5,7.6 4.6,8 4,8 C3.4,8 3,7.6 3,7 L3,4 C3,3.4 3.4,3 4,3 L20,3 C20.6,3 21,3.4 21,4 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/type" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/camera</title>
+    <defs>
+        <path d="M21,5 L17.5,5 L15.8,2.4 C15.6,2.2 15.3,2 15,2 L9,2 C8.7,2 8.4,2.2 8.2,2.4 L6.5,5 L3,5 C1.3,5 0,6.3 0,8 L0,19 C0,20.7 1.3,22 3,22 L21,22 C22.7,22 24,20.7 24,19 L24,8 C24,6.3 22.7,5 21,5 Z M22,19 C22,19.6 21.6,20 21,20 L3,20 C2.4,20 2,19.6 2,19 L2,8 C2,7.4 2.4,7 3,7 L7,7 C7.3,7 7.6,6.8 7.8,6.6 L9.5,4 L14.4,4 L16.1,6.6 C16.4,6.8 16.7,7 17,7 L21,7 C21.6,7 22,7.4 22,8 L22,19 Z M12,8 C9.2,8 7,10.2 7,13 C7,15.8 9.2,18 12,18 C14.8,18 17,15.8 17,13 C17,10.2 14.8,8 12,8 Z M12,16 C10.3,16 9,14.7 9,13 C9,11.3 10.3,10 12,10 C13.7,10 15,11.3 15,13 C15,14.7 13.7,16 12,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/camera" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

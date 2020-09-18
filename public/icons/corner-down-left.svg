@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/corner-down-left</title>
+    <defs>
+        <path d="M21,4 L21,11 C21,13.8 18.7969402,16 15.9930459,16 L6.37969402,16 L9.68428373,19.3 C10.0848401,19.7 10.0848401,20.3 9.68428373,20.7 C9.48400556,20.9 9.2837274,21 8.98331015,21 C8.68289291,21 8.48261474,20.9 8.28233658,20.7 L3.27538248,15.7 C3.17524339,15.6 3.07510431,15.5 3.07510431,15.4 C2.97496523,15.2 2.97496523,14.9 3.07510431,14.6 C3.17524339,14.5 3.17524339,14.4 3.27538248,14.3 L8.28233658,9.3 C8.68289291,8.9 9.2837274,8.9 9.68428373,9.3 C10.0848401,9.7 10.0848401,10.3 9.68428373,10.7 L6.37969402,14 L15.9930459,14 C17.6954103,14 18.9972184,12.7 18.9972184,11 L18.9972184,4 C18.9972184,3.4 19.3977747,3 19.9986092,3 C20.5994437,3 21,3.4 21,4 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/corner-down-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="#22212D">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

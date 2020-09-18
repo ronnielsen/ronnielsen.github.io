@@ -9,7 +9,7 @@ const StyledText = styled('p')(
   {
     margin: 0,
     padding: 0,
-    userSelect: 'none'
+    fontWeight: props => props.bold ? '700' :  '500',
   },
   color,
   layout,
@@ -18,6 +18,10 @@ const StyledText = styled('p')(
   typography,
   variant({
     variants: {
+      xxs: {
+        fontSize: 'xxs',
+        lineHeight: 'xs',
+      },
       xs: {
         fontSize: 'xs',
         lineHeight: 'xs',

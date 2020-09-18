@@ -15,11 +15,21 @@ const StyledButton = styled('button')(
   {
     border: 'none',
     outline: 'none',
-    fontWeight: 'bold',
+    fontWeight: '700',
     display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: props => props.theme.fontSizes.sm,
+    color: props => props.theme.colors.lightText,
+    backgroundColor: props => props.theme.colors.primary,
+    width: props => props.fullWidth ? '100%' : 'auto',
+    transitionDuration: '240ms',
+    '&:hover': {
+      filter: 'brightness(1.1)',
+    },
     '&:active': {
-      opacity: .75,
-    }
+      filter: 'brightness(.9)',
+    },
   },
   color,
   layout,
@@ -28,95 +38,48 @@ const StyledButton = styled('button')(
   border,
   typography,
   variant({
+    sizes: {
+      small: {
+        fontSize: '100px',
+      },
+    },
     variants: {
-      xs: {
-        px: 'xs',
-        py: 'xxs',
-        fontSize: 'xs',
-        lineHeight: 'xs',
-        borderRadius: 'md',
+      plain: {
+        backgroundColor: 'plain',
+        color: 'text',
+        fontWeight: '400',
+        '&:hover': {
+          filter: 'brightness(.75)',
+        },
+        '&:active': {
+          filter: 'brightness(0.5)',
+        }
       },
-      sm: {
-        px: 'sm',
-        py: 'xxs',
-        fontSize: 'sm',
-        lineHeight: 'sm',
-        borderRadius: 'md',
+      subtle: {
+        backgroundColor: 'transparent',
+        color: 'text',
+        fontWeight: '400',
+        '&:hover': {
+          filter: 'brightness(.9)',
+        },
+        '&:active': {
+          backgroundColor: 'focus',
+          filter: 'brightness(1)',
+        }
       },
-      md: {
-        px: 'sm',
-        py: 'xxs',
-        fontSize: 'md',
-        lineHeight: 'md',
-        borderRadius: 'lg',
-      },
-      mdPill: {
-        px: 'sm',
-        py: 'xxs',
-        fontSize: 'md',
-        lineHeight: 'md',
-        borderRadius: 'xl',
-        margin: 'xxxs',
-        fontWeight: 'light',
-        backgroundColor: 'tab',
-        color: 'black'
-      },
-      mdPillActive: {
-        px: 'sm',
-        py: 'xxs',
-        fontSize: 'md',
-        lineHeight: 'md',
-        borderRadius: 'xl',
-        margin: 'xxxs',
-        fontWeight: 'light',
-        backgroundColor: 'primary',
-        color: 'white'
-      },
-      lg: {
-        px: 'md',
-        py: 'xxs',
-        fontSize: 'lg',
-        lineHeight: 'lg',
-        borderRadius: 'lg',
-      },
-      xl: {
-        px: 'md',
-        py: 'xs',
-        fontSize: 'xl',
-        lineHeight: 'xl',
-        borderRadius: 'lg',
-      },
-      xxl: {
-        px: 'xl',
-        py: 'sm',
-        fontSize: 'xxl',
-        lineHeight: 'xxl',
-        borderRadius: 'xl',
-      },
-      xlCircle: {
-        height: 'xl',
-        width: 'auto',
-        // width: 'xl',
-        minWidth: 'xl',
-        margin: 'xxs',
-        borderRadius: 'xl',
-        backgroundColor: 'primary',
-        padding: '.75rem',
-        flex: '0 1 0'
-      },
-      xlCircleGhostDark: {
-        height: 'xl',
-        // width: 'xl',
-        minWidth: 'xl',
-        width: 'auto',
-        margin: 'xxs',
-        borderRadius: 'xl',
-        backgroundColor: 'ghostdark',
-        color: 'white',
-        padding: '.75rem',
-        flex: '0 1 0'
+      link: {
+        color: 'primary',
+        backgroundColor: 'transparent',
+        fontWeight: '400',
+        '&:hover': {
+          textDecoration: 'underline',
+          filter: 'brightness(1.1)',
+        },
+        '&:active': {
+          filter: 'brightness(.9)',
+          textDecoration: 'none',
+        }
       }
-
     }
   })
 );
@@ -124,19 +87,12 @@ const StyledButton = styled('button')(
 function Button(props) {
   return (
     <StyledButton
-      px="xs"
-      py="xxs"
       m="xs"
-      fontSize="sm"
-      color="lightText"
       borderRadius="md"
-      bg="primary"
       {...props}>
       {props.prepend}
-      {props.children}
-      {props.icons}
       {props.label}
-      {props.subMessage}
+      {props.children}
       {props.append}
     </StyledButton>
   );
@@ -145,10 +101,6 @@ function Button(props) {
 Button.propTypes = {
   /** Text content */
   label: PropTypes.any,
-  /** Text content */
-  name: PropTypes.string,
-  /** Text content */
-  subMessage: PropTypes.object,
   /** Background color */
   bg: PropTypes.string,
   /** Text color */

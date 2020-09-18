@@ -1,23 +1,26 @@
 // theme.js
 export default {
     colors: {
-        dark: '#21212D',
-        light: '#EAEAE5',
+        dark: '#111121',
+        light: '#F1F1F4',
         black: '#000000',
         white: '#FFFFFF',
-        grey: '#999999',
-        primary: '#2555D9',
-        secondary: '#727179',
-        text: '#21212D',
-        secondaryText: '#727179',
-        lightText: '#FFFFFF',
-        border: '#C2C2C5',
-        danger: '#FF4C5B',
-        success: '#00BF6F',
-        warning: '#FFCC1E',
-        tab: '#EAEAEB',
-        ghostdark: 'rgba(33,33,45,.5)',
-        mistdark: 'rgba(33,33,45,.05)'
+        fill: '#F1F1F4',
+        grey: '#AAAAB9',
+        primary: '#3333CC',
+        secondary: '#4A495F',
+        text: '#222132',
+        secondaryText: '#727180',
+        lightText: '#F1F1F4',
+        border: '#D2D2DC',
+        danger: '#DE505C',
+        success: '#20AA80',
+        warning: '#DEAA52',
+        tab: '#F1F1F4',
+        plain: 'rgba(51,51,204,.25)',
+        focus: 'rgba(113,113,225,1)',
+        card: '0px 1px 2px 1px rgba(0,0,0,.24)',
+        cardFocus: '0px 0px 0px 3px rgba(113,113,225,1)'
     },
     // layout
     sizes: {
@@ -48,12 +51,13 @@ export default {
 
     // line heights
     lineHeights: {
-        xs: '1.5rem', // 24px
-        sm: '2rem', // 32px
-        md: '3rem', // 48px
-        lg: '4rem', // 64px
-        xl: '5rem', // 80px
-        xxl: '7.5rem' //120px
+        xs: '1rem', // 16px
+        sm: '1.5rem', // 24px
+        md: '2rem', // 32px
+        lg: '3rem', // 48px
+        xl: '4rem', // 64px
+        xxl: '5rem', // 80px
+        xxxl: '7.5rem' //120px
     },
 
     // space (margins/paddings)
