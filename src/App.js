@@ -13,13 +13,13 @@ function App(props) {
     <ThemeProvider theme={theme}>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/portfolio">
+          <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/portfolio/process">
+          <Route path="/process">
             <Process/>
           </Route>
-          <Route path="/portfolio/resume">
+          <Route path="/resume">
             <Resume/>
           </Route>
         </Switch>
