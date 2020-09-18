@@ -27,6 +27,7 @@ const Container = styled(Div)`
 const Bitmoji = styled.img`
   height: 160px;
   width: 160px;
+  align-self: flex-end;
 `;
 
 const FlexGroup = styled(Flex)`

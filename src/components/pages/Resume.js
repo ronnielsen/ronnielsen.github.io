@@ -1,7 +1,6 @@
 import React from 'react'
-import { Div, Text, Flex, Button } from '../atoms'
-import { Header, InfoRow} from '../molecules'
-import { Link } from "react-router-dom";
+import { Div, Text, Flex } from '../atoms'
+import { Header} from '../molecules'
 import styled from 'styled-components'
 
 const Container = styled(Div)`
@@ -28,8 +27,10 @@ const Label = styled(Text)`
 
 const Img = styled.img`
   max-width: 720px;
+  width: 100%;
   height: auto;
   box-shadow: ${p => p.theme.colors.card};
+  object-fit: fit;
 `;
 
 function Resume(props) {

@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
 
 function Form() {

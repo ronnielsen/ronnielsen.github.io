@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Div, Text, Button, Icon } from '../atoms'
+import { Div, Button, Icon } from '../atoms'
 import { Header, Preview } from '../molecules'
 import styled, {keyframes} from 'styled-components'
 
@@ -17,7 +17,7 @@ const Container = styled(Div)`
 `;
 
 const Hero = styled(Div)`
-  height: 80vh;
+  height: 75vh;
   background: ${p => p.theme.colors.dark};
   color: ${p => p.theme.colors.lightText};
   display: flex;
@@ -36,6 +36,7 @@ const Group = styled(Div)`
   transition-duration: 500ms;
   font-weight: 400;
   padding: 64px;
+  animation: ${fadeIn} 500ms linear;
   @media(max-width: 767px){
       padding: 32px;
   }
@@ -166,15 +167,15 @@ function Home(props) {
           </Preview>
           <Preview
             name="365Pay"
-            desc="I became involved in this project once developers had established their own style, which had taken direction “inspiration” from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app."
-            role="Design and Front-end Styling"
-            tools="React Native, Sketch, Overflow, Invision"
+            desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app."
+            role="Product Design and Front-end Styling"
+            tools="React Native, Sketch, Adobe XD, Overflow, Invision"
           >
             <Image src={'./photos/mobile-min.jpg'}></Image>
           </Preview>
           <Preview
             name="365 Design System"
-            desc="At 365 the challenge was to create a unified template-driven look and feel across several various platforms. To accomplish this, I established a standard of colors, typography, and components in Sketch to be used in all future designs. Working with a developer, we created a React library of reusable UI with styled-components. These components were easy to template by connecting them to styled-systems. My goal was to make it super-easy for any developer to create UI that is consistant. We used Storybook to document all the props for each component. This system ended up greatly increasing the speed at which we could create interfaces, and allowed me to create rapid prototypes fast."
+            desc="At 365 the challenge was to create a unified template-driven look and feel across several point-of-sale platforms. To accomplish this, I established a standard of colors, typography, and components in Sketch to be used in all future designs. Working with a developer, we created a React library of reusable UI with styled-components. These components were easy to template by connecting them to styled-systems. My goal was to make it super-easy for any developer to create UI that is consistant. We used Storybook to document all the props for each component. This system ended up greatly increasing the speed at which we could create interfaces, and allowed me to create rapid prototypes fast."
             role="Product Design, Front-end Development"
             tools="React, Storybook, Sketch"
           >
@@ -184,7 +185,7 @@ function Home(props) {
             name="Portfolio Website"
             desc="I made this portfolio in React, using the Design System Foundation referenced above. Checkout the repo to see what I used:..."
             role="Product Design, Front-end Development"
-            tools="React, Storybook, Sketch"
+            tools="React, Storybook, Figma"
           >
             <Image src={'./photos/portfolio.jpg'}></Image>
           </Preview>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Div } from '../atoms';
-import { Link } from "react-router-dom";
 import styled, {keyframes} from 'styled-components'
 
 const fadeIn = keyframes`
@@ -24,6 +23,7 @@ const Container = styled(Div)`
   margin: 0px 32px 32px 32px;
   flex-direction: column;
   align-self: flex-start;
+  animation: ${fadeIn} 500ms linear;
   &:hover {
     box-shadow: 0px 0px 0px 2px ${p => p.theme.colors.border};
   }
@@ -44,13 +44,6 @@ const Details = styled(Div)`
   @media(max-width: 1023px){
     max-width: 100%;
   }
-`;
-
-const Artwork = styled(Div)`
-  display: flex;
-  flex: 1;
-  background: ${p => p.theme.colors.border};
-  min-height: 320px;
 `;
 
 const Name = styled(Div)`

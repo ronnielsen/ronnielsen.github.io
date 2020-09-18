@@ -1,7 +1,6 @@
 import React from 'react'
-import { Div, Text, Flex, Button } from '../atoms'
+import { Div, Text, Flex } from '../atoms'
 import { Header, InfoRow} from '../molecules'
-import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
 const Container = styled(Div)`
@@ -35,32 +34,32 @@ function Process(props) {
         <InfoRow
           img="1"
           title="1. Listening and Research"
-          desc="Identify the project missions, and requirements. Most project aren’t entirely new concepts, existing solutions to any requirements can be found both online and in the real world."
+          desc="First I identify the project missions, and requirements. It's always a good idea to look at current real world examples as a starting point for ideation."
         />
         <InfoRow
           img="2"
           title="2. Brainstorm"
-          desc="Logically organize required features into a heirarchical order, then group similar features together to create relation by proximity in my layouts."
+          desc="I like organize features by heirarchical importance to the project goals. Paper, and pencil is my favorite way to do initial layouts, ideas and flows."
         />
         <InfoRow
           img="3"
           title="3. Establish Design System"
-          desc="This step is key to setting yourself up for success. You must define things such as space, colors, and typography, to establish aesthetical consistency early on."
+          desc="Once I have a rough sketch of the UI I want to create, I establish a design system around things such as colors, typography, and essential UI components."
         />
         <InfoRow
           img="4"
           title="4. Iteration, and Repeatition"
-          desc="Using the design system and my trusty 8px grid, I iterate the layout of features in greyscale initially. Once I’m happy with the layout, I apply touches of color to help lead users on their journey."
+          desc="From here, I begin laying out components from the design system onto artboards. I perfer to use an 8px grid to make ensure that my UI can create easily recognizable visual patterns."
         />
         <InfoRow
           img="5"
           title="5. Prototyping & Revisions"
-          desc="Once I figure out the UI/UX, I like to create a rapid-prototype in real front-end, to reveal any potential problems in the design. Then I revise until everyone is satisfied with the design, and experience."
+          desc="Once I'm happy with the design, I like to create a rapid-prototype in React front-end, then revise until everyone is satisfied."
         />
         <InfoRow
           img="6"
           title="6. Development"
-          desc="My favorite thing to do is figure out how to create the most amount of UI with the least amount of code/components. Writing clean front-end code is oddly satisfying and I love to making my designs into functional."
+          desc="This is my favorite part, making my designs real! I strive to create the most amount of UI with the least amount of code."
         />
       </Content>
     </Container>
