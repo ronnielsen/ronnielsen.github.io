@@ -3,6 +3,6 @@ Check it out here: [My Portfolio](https://ronnielsen.github.io).
 
 
 ### My Stack
-⚛️ React
-💅 Styled-components
+⚛️ React <br/>
+💅 Styled-components <br/>
 ⬡ Styled-system
