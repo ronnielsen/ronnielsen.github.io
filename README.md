@@ -1,5 +1,5 @@
-## Welcome
-This is the repo for my [Portfolio](https://ronnielsen.github.io).
+## Welcome to my Portfolio
+Check it out here: [My Portfolio](https://ronnielsen.github.io).
 
 
 ### My Stack
