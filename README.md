@@ -1,9 +1,8 @@
 ## Welcome
+This is the repo for my [Portfolio](https://ronnielsen.github.io).
 
-This repo will serve as a playground for learning our front-end stack.
 
-
-### Our Stack
+### My Stack
 ⚛️ React
 💅 Styled-components
 ⬡ Styled-system
