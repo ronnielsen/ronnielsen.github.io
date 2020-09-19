@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { Header } from './components/molecules';
 import { Home, Process, Resume } from './components/pages';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 // the full theme object
 import {lightTheme, darkTheme} from './theme';
 

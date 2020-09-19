@@ -80,6 +80,7 @@ function Preview(props) {
         <Role>Role: {props.role || 'UI/UX Design, Branding, Front-end Development'}</Role>
         <Tools>Tools: {props.tools || 'Sketch, React'}</Tools>
         <Desc>{props.desc || 'The fox jumped over the bridge, to steal a hotdog.'}</Desc>
+        {props.links}
       </Details>
     </Container>
   );

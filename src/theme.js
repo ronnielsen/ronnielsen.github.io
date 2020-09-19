@@ -99,7 +99,7 @@ export const darkTheme = {
         text: '#F1F1F4',
         secondaryText: '#AAAAB9',
         lightText: '#222132',
-        border: '#D2D2DC',
+        border: '#4A495F',
         danger: '#DE505C',
         success: '#20AA80',
         warning: '#DEAA52',
