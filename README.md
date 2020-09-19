@@ -1,4 +1,4 @@
-## Welcome to my Portfolio
+## Welcome to the repo for my portfolio
 Check it out here: [My Portfolio](https://ronnielsen.github.io).
 
 
