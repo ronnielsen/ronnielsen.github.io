@@ -1,7 +1,16 @@
 import React from 'react'
 import { Div, Text, Flex } from '../atoms'
-import { Header} from '../molecules'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+
+to {
+  opacity: 1;
+}
+`;
 
 const Container = styled(Div)`
   height: 100%;
@@ -11,6 +20,7 @@ const Content = styled(Flex)`
   align-items: center;
   padding-bottom: 32px;
   display: flex;
+  animation: ${fadeIn} 500ms linear;
 `;
 
 const Label = styled(Text)`
@@ -36,10 +46,10 @@ const Img = styled.img`
 function Resume(props) {
   return (
     <Container bg="light">
-      <Header/>
       <Content>
         <Label value="Resumé"/>
-        <Img src="./photos/ResumeLight.jpg"/>
+        {props.theme === 'light' ? (<Img src="./photos/ResumeLight.jpg"/>) : (<Img src="./photos/ResumeDark.jpg"/>) }
+
       </Content>
     </Container>
   );

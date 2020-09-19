@@ -27,7 +27,11 @@ const Container = styled(Div)`
 const Bitmoji = styled.img`
   height: 160px;
   width: 160px;
-  align-self: flex-end;
+  align-self: center;
+  @media(max-width: 767px){
+    height: 120px;
+    width: 120px;
+  }
 `;
 
 const FlexGroup = styled(Flex)`
@@ -36,7 +40,8 @@ const FlexGroup = styled(Flex)`
 
 const Title = styled(Text)`
   font-size: 24px;
-  line-height: 40px;
+  line-height: 32px;
+  margin-bottom: 8px;
   font-weight: 700;
   color: ${p => p.theme.colors.text};
 `;

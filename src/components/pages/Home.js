@@ -1,13 +1,12 @@
 import React, {useState} from 'react'
 import { Div, Button, Icon } from '../atoms'
-import { Header, Preview } from '../molecules'
+import { Preview } from '../molecules'
 import styled, {keyframes} from 'styled-components'
 
 const fadeIn = keyframes`
 from {
   opacity: 0;
 }
-
 to {
   opacity: 1;
 }
@@ -48,7 +47,7 @@ const StyledButton = styled(Button)`
   border-radius: 45px;
   margin-left: 0px;
   background: ${p => p.theme.colors.light};
-  color: ${p => p.theme.colors.dark};
+  color: ${p => p.theme.colors.text};
   &:hover {
     background: ${p => p.theme.colors.success};
     color: ${p => p.theme.colors.lightText};
@@ -78,6 +77,7 @@ const Section = styled(Div)`
 
 const Label = styled(Div)`
   border-bottom: 1px solid ${p => p.theme.colors.text};
+  color: ${p => p.theme.colors.text};
   width: 100px;
   display: inline-block;
   font-size: 24px;
@@ -107,7 +107,7 @@ const ContactRow = styled(Div)`
 `;
 
 const StyledLink = styled.a`
-  color: ${p => p.theme.colors.lightText};
+  color: ${p => p.theme.colors.text};
   text-decoration: underline;
 `;
 
@@ -128,15 +128,38 @@ const Image = styled.img`
   }
 `;
 
+const ToTop = styled(Div)`
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  padding: 8px;
+  border-radius: 45px;
+  background: ${p => p.theme.colors.dark};
+  animation: ${fadeIn} 250ms linear;
+`;
+
 function Home(props) {
   const [contact, showContact] = useState(false);
+  const [scrolled, hasScrolled] = useState(false);
   const Contact = styled(Div)`
     display: ${contact ? 'block' : 'none'};
     animation: ${fadeIn} 500ms linear;
   `;
+  const scrollTop = () => {
+   window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+        hasScrolled(true)
+      }
+  });
+  window.addEventListener('scroll', function() {
+    if(window.scrollY < 200) {
+        hasScrolled(false)
+      }
+  });
   return (
     <Container>
-      <Header />
       <Hero>
         <Group>
           I'm a <Bold>Product Designer,</Bold> who can code front-end.
@@ -191,6 +214,8 @@ function Home(props) {
           </Preview>
         </Row>
       </Section>
+      {scrolled && <ToTop onClick={scrollTop}><Icon name="ArrowUp" color="white"/></ToTop>}
+
     </Container>
   );
 }

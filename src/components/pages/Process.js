@@ -1,7 +1,17 @@
 import React from 'react'
 import { Div, Text, Flex } from '../atoms'
-import { Header, InfoRow} from '../molecules'
-import styled from 'styled-components'
+import { InfoRow} from '../molecules'
+import styled, {keyframes} from 'styled-components'
+
+const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+
+to {
+  opacity: 1;
+}
+`;
 
 const Container = styled(Div)`
   height: 100%;
@@ -11,6 +21,7 @@ const Content = styled(Flex)`
   align-items: center;
   justify-content: center;
   padding-bottom: 32px;
+  animation: ${fadeIn} 500ms linear;
 `;
 
 const Label = styled(Text)`
@@ -28,7 +39,6 @@ const Label = styled(Text)`
 function Process(props) {
   return (
     <Container bg="light">
-      <Header/>
       <Content>
         <Label value="My process"/>
         <InfoRow

@@ -37,7 +37,8 @@ const Container = styled(Div)`
 
 const Details = styled(Div)`
   width: 100%;
-  background: white;
+  background: ${p => p.theme.colors.white};
+  color: ${p => p.theme.colors.text};
   display: flex;
   flex-direction: column;
   padding: 32px;
