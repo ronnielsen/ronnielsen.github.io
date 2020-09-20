@@ -21,7 +21,6 @@ const Content = styled(Flex)`
   align-items: center;
   justify-content: center;
   padding-bottom: 32px;
-  animation: ${fadeIn} 500ms linear;
 `;
 
 const Label = styled(Text)`
@@ -49,17 +48,17 @@ function Process(props) {
         <InfoRow
           img="2"
           title="2. Brainstorm"
-          desc="I like organize features by heirarchical importance to the project goals. Paper, and pencil is my favorite way to do initial layouts, ideas and flows."
+          desc="During this phase I organize features based on their importance to the project goals. I prefer to start with paper, and pencil for initial wireframes and workflows."
         />
         <InfoRow
           img="3"
           title="3. Establish Design System"
-          desc="Once I have a rough sketch of the UI I want to create, I establish a design system around things such as colors, typography, and essential UI components."
+          desc="Early on I take to the wireframes and build a system of UI compoents around them in order to create consistancy from the start. I establish a foundation around things such as colors, typography, and essential UI components."
         />
         <InfoRow
           img="4"
           title="4. Iteration, and Repeatition"
-          desc="From here, I begin laying out components from the design system onto artboards. I perfer to use an 8px grid to make ensure that my UI can create easily recognizable visual patterns."
+          desc="From here I use Sketch/Figma/AdobeXD to layout these components onto artboards. I perfer to use an soft 8px grid to make ensure that my UI can create easily recognizable visual patterns."
         />
         <InfoRow
           img="5"

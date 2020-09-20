@@ -42,16 +42,19 @@ const Name = styled(Link)`
   flex: 1;
   font-weight: 900;
   text-decoration: none;
-  @media(max-width: 767px){
-    font-size: 18px;
-  }
 `;
 
 const Mode = styled(Div)`
   border-radius: 45px;
   padding: 8px;
   background: ${p => p.theme.colors.light};
-  &:hover {
+  @media(min-width: 769px){
+    &:hover {
+      background: ${p => p.theme.colors.dark};
+      color: ${p => p.theme.colors.light};
+    }
+  }
+  &:active {
     background: ${p => p.theme.colors.dark};
     color: ${p => p.theme.colors.light};
   }

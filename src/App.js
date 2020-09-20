@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { GlobalStyles } from './components/atoms';
 import { Header } from './components/molecules';
 import { Home, Process, Resume } from './components/pages';
 import { ThemeProvider } from 'styled-components';
@@ -17,20 +18,22 @@ function App(props) {
   };
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <Router basename='/'>
-        <Header themeToggler={themeToggler} theme={theme}/>
-        <Switch>
-          <Route exact path='/'>
-            <Home/>
-          </Route>
-          <Route path='/process'>
-            <Process/>
-          </Route>
-          <Route path='/resume'>
-            <Resume theme={theme}/>
-          </Route>
-        </Switch>
-      </Router>
+      <GlobalStyles>
+        <Router basename='/'>
+          <Header themeToggler={themeToggler} theme={theme}/>
+          <Switch>
+            <Route exact path='/'>
+              <Home/>
+            </Route>
+            <Route path='/process'>
+              <Process/>
+            </Route>
+            <Route path='/resume'>
+              <Resume theme={theme}/>
+            </Route>
+          </Switch>
+        </Router>
+      </GlobalStyles>
     </ThemeProvider>
   );
 }

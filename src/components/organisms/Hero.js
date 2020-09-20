@@ -77,16 +77,11 @@ function Hero() {
     color: ${p => p.theme.colors.text};
     text-decoration: underline;
   `;
-
-  const Bold = styled(Div)`
-    font-weight: 900;
-    display: inline-block;
-  `;
-
+  
   return (
     <Hero>
       <Group>
-        I'm a <Bold>Product Designer,</Bold> who can code front-end.
+        I'm a <b>Product Designer</b> that can code front-end.
         {contact ? (<div/>) : (<StyledButton label="Get in touch" onClick={() => showContact(true)}/>)}
         <Contact my="8px">
           <ContactRow><Icon name="Mail" mr="16px"/> ronaldnielsen@gmail.com</ContactRow>

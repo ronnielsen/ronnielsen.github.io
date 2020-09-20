@@ -51,6 +51,12 @@ function Portfolio() {
     }
   `;
 
+  const ButtonIcon = styled.img`
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  `;
+
   return (
     <Section>
       <Label mb="32px">Portfolio</Label>
@@ -60,8 +66,21 @@ function Portfolio() {
           desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create a wide variety of experiences. I also coded this system in React as a framework for this website, and future projects."
           role="Design and Development"
           tools="React, Storybook, Sketch"
+          links={
+            <Link
+              href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+              bg="dark"
+              color="light"
+              mx="0px"
+              mb="0px"
+              mt="16px"
+            >
+              <ButtonIcon src="./photos/sketch.png" mr="8px"/>
+              Download Sketch File
+            </Link>
+          }
         >
-          <Image src={'./photos/welcome-square-min.jpg'}></Image>
+          <Image src={'./photos/welcome-square.jpg'}></Image>
         </Preview>
         <Preview
           name="365Pay"
@@ -80,7 +99,7 @@ function Portfolio() {
           <Image src={'./photos/design-system-min.jpg'}></Image>
         </Preview>
         <Preview
-          name="Portfolio Website"
+          name="This Website"
           desc="I made this portfolio in React, using the Design System Foundation referenced above. Checkout the repo to see what I used."
           role="Product Design, Front-end Development"
           tools="React, Storybook, Figma"

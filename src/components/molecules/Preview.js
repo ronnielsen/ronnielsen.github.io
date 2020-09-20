@@ -23,15 +23,14 @@ const Container = styled(Div)`
   margin: 0px 32px 32px 32px;
   flex-direction: column;
   align-self: flex-start;
-  animation: ${fadeIn} 500ms linear;
   &:hover {
     box-shadow: 0px 0px 0px 2px ${p => p.theme.colors.border};
   }
   @media(max-width: 1023px){
-    margin: 0px 16px 16px 16px;
+    margin: 0px 16px 32px 16px;
   }
   @media(max-width: 767px){
-    margin: 0px 0px 16px 0px;
+    margin: 0px 0px 32px 0px;
   }
 `;
 
@@ -44,6 +43,7 @@ const Details = styled(Div)`
   padding: 32px;
   @media(max-width: 1023px){
     max-width: 100%;
+    padding: 32px 16px;
   }
 `;
 
@@ -66,7 +66,7 @@ const Role = styled(Div)`
 `;
 
 const Tools = styled(Role)`
-  border-bottom: 2px solid ${p => p.theme.colors.border};
+  border-bottom: 1px solid ${p => p.theme.colors.border};
   margin-bottom: 16px;
   padding-bottom: 16px;
 `;
