@@ -13,6 +13,8 @@ to {
 `;
 
 const Container = styled(Div)`
+  padding-bottom: 48px;
+  background: ${p => p.theme.colors.white}
 `;
 
 const ToTop = styled(Div)`

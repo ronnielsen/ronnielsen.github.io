@@ -17,7 +17,7 @@ const Container = styled(Div)`
 `;
 
 const StyledLink = styled(Link)`
-  color: ${p => p.theme.colors.lightText};
+  color: ${p => p.theme.colors.text};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -27,8 +27,8 @@ const StyledLink = styled(Link)`
   line-height: 24px;
   font-size: 18px;
   &:hover {
-    background: ${p => p.theme.colors.light};
-    color: ${p => p.theme.colors.text};
+    background: ${p => p.theme.colors.dark};
+    color: ${p => p.theme.colors.lightText};
     transition-duration: 500ms;
   }
   @media (max-width: 767px){
@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
 
 const Name = styled(Link)`
   font-size: 24px;
-  color: ${p => p.theme.colors.lightText};
+  color: ${p => p.theme.colors.text};
   flex: 1;
   font-weight: 900;
   text-decoration: none;
@@ -47,15 +47,25 @@ const Name = styled(Link)`
   }
 `;
 
+const Mode = styled(Div)`
+  border-radius: 45px;
+  padding: 8px;
+  background: ${p => p.theme.colors.light};
+  &:hover {
+    background: ${p => p.theme.colors.dark};
+    color: ${p => p.theme.colors.light};
+  }
+`;
+
 function Header(props) {
   return (
-    <Container bg="dark" color="lightText" p="xs">
+    <Container bg="light" color="dark" p="xs">
       <Name to="/">Ron Nielsen</Name>
       <StyledLink to="/process">Process</StyledLink>
       <StyledLink to="/resume">Resume</StyledLink>
-      <Div onClick={() => props.themeToggler()}>
+      <Mode ml="8px" onClick={() => props.themeToggler()}>
       {props.theme === 'light' ? (<Icon name="Moon"/>) : (<Icon name="Sun"/>)}
-      </Div>
+      </Mode>
     </Container>
   );
 }

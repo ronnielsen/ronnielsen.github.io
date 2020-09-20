@@ -21,8 +21,8 @@ function Hero() {
 
   const Hero = styled(Div)`
     height: 75vh;
-    background: ${p => p.theme.colors.dark};
-    color: ${p => p.theme.colors.lightText};
+    background: ${p => p.theme.colors.light};
+    color: ${p => p.theme.colors.text};
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,7 +39,6 @@ function Hero() {
     transition-duration: 500ms;
     font-weight: 400;
     padding: 64px;
-    animation: ${fadeIn} 500ms linear;
     @media(max-width: 767px){
         padding: 32px;
     }
@@ -50,11 +49,11 @@ function Hero() {
     padding: ${p => p.theme.space.xs} ${p => p.theme.space.md};
     border-radius: 45px;
     margin-left: 0px;
-    background: ${p => p.theme.colors.light};
-    color: ${p => p.theme.colors.text};
+    background: ${p => p.theme.colors.dark};
+    color: ${p => p.theme.colors.lightText};
     &:hover {
       background: ${p => p.theme.colors.success};
-      color: ${p => p.theme.colors.lightText};
+      color: ${p => p.theme.colors.white};
       transition-duration: 250ms;
     }
     @media(max-width: 767px){

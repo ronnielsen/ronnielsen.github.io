@@ -1,23 +1,14 @@
 import React from 'react'
 import { Div, Icon, Link } from '../atoms'
 import { Preview } from '../molecules'
-import styled, {keyframes} from 'styled-components'
-
-const fadeIn = keyframes`
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-`;
+import styled from 'styled-components'
 
 function Portfolio() {
   const Section = styled(Div)`
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: ${p => p.theme.colors.light};
+    background: ${p => p.theme.colors.white};
     text-align: center;
     line-height: 48px;
     flex-direction: column;
@@ -55,7 +46,6 @@ function Portfolio() {
     min-height: 100%;
     object-fit: cover;
     transition-duration: 250ms;
-    animation: ${fadeIn} 500ms linear;
     @media(max-width: 768px){
       height: 420px;
     }
