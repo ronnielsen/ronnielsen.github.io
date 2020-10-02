@@ -30,7 +30,7 @@ function Hero() {
     font-weight: 700;
     @media(max-width: 767px){
       font-size: 32px;
-      height: 50vh;
+      height: 65vh;
     }
   `;
 
@@ -39,6 +39,7 @@ function Hero() {
     transition-duration: 500ms;
     font-weight: 400;
     padding: 64px;
+    position: relative;
     @media(max-width: 767px){
         padding: 32px;
     }
@@ -77,7 +78,7 @@ function Hero() {
     color: ${p => p.theme.colors.text};
     text-decoration: underline;
   `;
-  
+
   return (
     <Hero>
       <Group>

@@ -63,7 +63,7 @@ function Portfolio() {
       <Row>
         <Preview
           name="Design System Foundation"
-          desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create a wide variety of experiences. I also coded this system in React as a framework for this website, and future projects."
+          desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create a hi-fi wireframes and mockups. I also coded this system in React as a framework for this website, and future projects."
           role="Design and Development"
           tools="React, Storybook, Sketch"
           links={
@@ -84,11 +84,19 @@ function Portfolio() {
         </Preview>
         <Preview
           name="365Pay"
-          desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app."
+          desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app. This product was a challenge because of the diverse nature of its features; users could self-checkout with the camera, or order preppared food ahead of time, or connect to bluetooth devices such as vending machines to dispense items."
           role="Product Design and Front-end Styling"
           tools="React Native, Sketch, Adobe XD, Overflow, Invision"
         >
-          <Image src={'./photos/mobile-min.jpg'}></Image>
+          <Image src={'./photos/mobile.jpg'}></Image>
+        </Preview>
+        <Preview
+          name="Eat It or Delete It"
+          desc="This project's goal was to make it easier for users to see the snacks they like, while also giving us insightful data on which foods people like. The Tinder-like swiper is a fun way to collect useful data and make users experiences better."
+          role="Product Design"
+          tools="React, Sketch, Adobe XD"
+        >
+          <Image src={'./photos/eatit.jpg'}></Image>
         </Preview>
         <Preview
           name="365 Design System"
@@ -100,7 +108,7 @@ function Portfolio() {
         </Preview>
         <Preview
           name="This Website"
-          desc="I made this portfolio in React, using the Design System Foundation referenced above. Checkout the repo to see what I used."
+          desc="I made this website from scratch in React, using the Design System Foundation referenced above. I wanted to challenge myself to handle a dark/light theme toggel from scratch. Checkout the repo to see what I used."
           role="Product Design, Front-end Development"
           tools="React, Storybook, Figma"
           links={

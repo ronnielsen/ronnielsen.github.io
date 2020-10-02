@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react'
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import styled, { ThemeProvider } from 'styled-components';
-import theme from '../src/theme';
+import {lightTheme} from '../src/theme';
 
 import '../src/index.css';
 
@@ -75,7 +75,7 @@ addParameters({
 
 addDecorator(withInfo);
 addDecorator(storyFn => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={lightTheme}>
     <Story>{storyFn()}</Story>
   </ThemeProvider>
 ))

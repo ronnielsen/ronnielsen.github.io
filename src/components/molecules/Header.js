@@ -26,10 +26,17 @@ const StyledLink = styled(Link)`
   padding: 8px 16px;
   line-height: 24px;
   font-size: 18px;
-  &:hover {
+  &:active {
     background: ${p => p.theme.colors.dark};
     color: ${p => p.theme.colors.lightText};
-    transition-duration: 500ms;
+    transition-duration: 200ms;
+  }
+  @media(min-width: 769px){
+    &:hover {
+      background: ${p => p.theme.colors.dark};
+      color: ${p => p.theme.colors.lightText};
+      transition-duration: 500ms;
+    }
   }
   @media (max-width: 767px){
     font-size: 14px;
@@ -42,6 +49,9 @@ const Name = styled(Link)`
   flex: 1;
   font-weight: 900;
   text-decoration: none;
+  @media(max-width: 400px){
+    font-size: 18px;
+  }
 `;
 
 const Mode = styled(Div)`
