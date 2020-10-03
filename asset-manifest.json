@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/storybook/main.css",
+    "main.js": "/storybook/main.16ce4b8a8a2e9ff3fb8b.bundle.js",
+    "main.css.map": "/storybook/main.css.map",
+    "main.js.map": "/storybook/main.16ce4b8a8a2e9ff3fb8b.bundle.js.map",
+    "runtime~main.js": "/storybook/runtime~main.16ce4b8a8a2e9ff3fb8b.bundle.js",
+    "runtime~main.js.map": "/storybook/runtime~main.16ce4b8a8a2e9ff3fb8b.bundle.js.map",
+    "vendors~main.css": "/storybook/vendors~main.css",
+    "vendors~main.js": "/storybook/vendors~main.16ce4b8a8a2e9ff3fb8b.bundle.js",
+    "vendors~main.css.map": "/storybook/vendors~main.css.map",
+    "vendors~main.js.map": "/storybook/vendors~main.16ce4b8a8a2e9ff3fb8b.bundle.js.map",
+    "iframe.html": "/storybook/iframe.html",
+    "precache-manifest.b633002c8ab5ca60eebd65a42bc16f38.js": "/storybook/precache-manifest.b633002c8ab5ca60eebd65a42bc16f38.js",
+    "service-worker.js": "/storybook/service-worker.js",
+    "vendors~main.16ce4b8a8a2e9ff3fb8b.bundle.js.LICENSE.txt": "/storybook/vendors~main.16ce4b8a8a2e9ff3fb8b.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.16ce4b8a8a2e9ff3fb8b.bundle.js",
+    "vendors~main.css",
+    "vendors~main.16ce4b8a8a2e9ff3fb8b.bundle.js",
+    "main.css",
+    "main.16ce4b8a8a2e9ff3fb8b.bundle.js"
+  ]
+}
