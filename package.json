@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.11.6",
+    "@storybook/preset-create-react-app": "^3.1.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "@testing-library/user-event": "^12.1.5",
@@ -27,8 +28,8 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-storybook": "build-storybook -s public/storybook",
-    "storybook": "start-storybook -p 9001 -c ./.storybook -s ./",
+    "build-storybook": "build-storybook -c .storybook -o public/storybook",
+    "storybook": "start-storybook -s ./public,./static -p 9001",
     "deploy-storybook": "storybook-to-ghpages",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -50,15 +51,15 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.0.21",
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-a11y": "^6.0.22",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-console": "^1.2.2",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.0.21",
-    "@storybook/addon-viewport": "^6.0.21",
-    "@storybook/addons": "^6.0.21",
-    "@storybook/react": "5.3.10",
-    "@storybook/storybook-deployer": "^2.8.1",
+    "@storybook/addon-links": "^6.0.22",
+    "@storybook/addon-viewport": "^6.0.22",
+    "@storybook/addons": "^6.0.22",
+    "@storybook/react": "6.0.22",
+    "@storybook/storybook-deployer": "^2.8.6",
     "chromatic": "^5.2.0",
     "gh-pages": "^2.0.1"
   }

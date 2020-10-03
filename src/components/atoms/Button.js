@@ -52,7 +52,7 @@ const StyledButton = styled('button')(
           filter: 'brightness(.75)',
         },
         '&:active': {
-          filter: 'brightness(0.5)',
+          filter: 'brightness(1)',
         }
       },
       subtle: {
@@ -88,6 +88,8 @@ function Button(props) {
   return (
     <StyledButton
       m="xs"
+      px="xs"
+      py="xxs"
       borderRadius="md"
       {...props}>
       {props.prepend}

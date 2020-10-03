@@ -1,20 +1,50 @@
 import React from 'react';
 import { Text } from '../';
 
-export default { title: 'atoms.Text' };
+export default { title: 'Atoms/Text' };
 
 export const plain = () => <Text value="Hello World" />;
 
 export const variants = () =>
   <div>
-    <Text variant="xxs" value="Variant: xxs 12px" />
-    <Text variant="xs" value="Variant: xs 14px" />
-    <Text variant="sm" value="Variant: sm 18px" />
-    <Text variant="md" value="Variant: md 24px" />
-    <Text variant="lg" value="Variant: lg 32px" />
-    <Text variant="xl" value="Variant: xl 48px" />
-    <Text variant="xxl" value="Variant: xxl 64px" />
-    <Text variant="xxxl" value="Variant: xxxl 96px" />
+    <Text
+      variant="xxs"
+      value="12px   -   The fox jumped over the bridge."
+      my="xs"/>
+    <Text
+      variant="xs" value="14px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="sm"
+      value="18px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="md"
+      value="24px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="lg"
+      value="32px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="xl"
+      value="48px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="xxl"
+      value="64px   -   The fox jumped over the bridge."
+      my="xs"
+    />
+    <Text
+      variant="xxxl"
+      value="96px   -   The fox jumped over the bridge."
+      my="xs"
+    />
   </div>;
 
 export const colors = () =>

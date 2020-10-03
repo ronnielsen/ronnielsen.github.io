@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Div, Flex, Text } from '../atoms';
 import styled from 'styled-components'
 
@@ -55,13 +56,19 @@ const Desc = styled(Text)`
 function InfoRow(props) {
   return (
     <Container {...props}>
-      <Bitmoji src={'./photos/bitmoji/' + (props.img || '1') + '.png'}/>
+      <Bitmoji src={'./photos/bitmoji/' + (props.image || '1') + '.png'}/>
       <FlexGroup>
-        <Title value={props.title || 'Title'}/>
-        <Desc value={props.desc || 'Desc'}/>
+        <Title value={props.title || '{title}'}/>
+        <Desc value={props.desc || '{desc}'}/>
       </FlexGroup>
     </Container>
   );
+}
+
+InfoRow.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  desc: PropTypes.string
 }
 
 export default InfoRow;

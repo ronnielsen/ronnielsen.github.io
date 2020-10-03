@@ -7,8 +7,10 @@ const Container = styled(Div)`
   display: flex;
   flex: 1;
   flex-direction: ${props => props.row ? 'row' : 'column'};
+  justify-content: ${props => props.centered ? 'center' : 'flex-start'};
+  align-items: ${props => props.centered ? 'center' : 'flex-start'};
+  align-self: stretch;
   width: ${props => props.row ? '100%' : 'auto'};
-  height: ${props => props.row ? 'auto' : '100%'};
 `;
 
 function Flex(props) {
@@ -20,8 +22,10 @@ function Flex(props) {
 }
 
 Flex.propTypes = {
-  /** Size in pixels */
+  /** Set flex direction as row */
   row: PropTypes.bool,
+  /** Set align-items and justify-content to center */
+  centered: PropTypes.bool,
 }
 
 export default Flex;

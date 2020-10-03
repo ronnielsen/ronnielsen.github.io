@@ -1,6 +1,5 @@
 import React from 'react';
-import { Div, Button, Icon } from '../';
-export default { title: 'atoms.Div' };
+import { Div } from '../';
+export default { title: 'Atoms/Div' };
 
-export const basic = () =>
-    <Div>Hello</Div>;
+export const basic = () => <Div>Hello</Div>;

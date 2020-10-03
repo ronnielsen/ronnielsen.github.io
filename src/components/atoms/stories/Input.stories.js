@@ -1,6 +1,8 @@
 import React from 'react';
 import { Input } from '../';
 
-export default { title: 'atoms.Input' };
+export default { title: 'Atoms/Input' };
 
-export const defaultInput = () => <><Input/></>;
+export const defaultInput = () => <Input/>;
+
+export const placeholder = () => <Input placeholder="Enter something..."/>;

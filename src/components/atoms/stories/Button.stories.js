@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Flex, Icon } from '../';
 
-export default { title: 'atoms.Button' };
+export default { title: 'Atoms/Button' };
 
-export const defaultButton = () => <div><Button label="Basic"/></div>;
+export const defaultButton = () => <Button label="Basic"/>;
 
 export const appearance = () =>
   <div>
@@ -43,6 +43,6 @@ export const withIcon = () =>
   </div>
 
 export const fullWidth = () =>
-  <div row>
+  <Flex row>
     <Button label="Full Width" fullWidth/>
-  </div>
+  </Flex>

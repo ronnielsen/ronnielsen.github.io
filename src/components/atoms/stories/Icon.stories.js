@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flex, Icon } from '../';
 
-export default { title: 'atoms.Icon' };
+export default { title: 'Atoms/Icon' };
 
-export const defaultIcon = () => <div><Icon name="Smile"/></div>;
+export const defaultIcon = () => <Icon name="Smile"/>;
 
 export const appearance = () =>
   <div>
@@ -21,7 +21,4 @@ export const sizes = () =>
     <Icon name="Smile" size="96px"/>
   </div>;
 
-export const spin = () =>
-  <div>
-    <Icon name="Loader" spin/>
-  </div>;
+export const spin = () => <Icon name="Loader" spin/>;

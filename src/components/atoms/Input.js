@@ -25,13 +25,15 @@ const StyledInput = styled.input`
   font-size: ${p => p.theme.fontSizes.sm};
   line-height: ${p => p.theme.lineHeights.sm};
   width: 100%;
+  font-family: 'Nunito';
   &:hover {
     filter: brightness(.95);
   }
   &:focus {
     box-shadow: 0px 0px 0px 4px ${p => p.theme.colors.focus};
     transition-duration: 400ms;
-    background: ${p => p.theme.colors.fill};
+    background: ${p => p.theme.colors.white};
+    filter: brightness(1);
   }
   ${color}
   ${space}
@@ -47,7 +49,7 @@ const StyledInput = styled.input`
 
 function Input(props) {
   return (
-    <StyledInput>
+    <StyledInput placeholder={props.placeholder || ''}>
       {props.children}
     </StyledInput>
   )

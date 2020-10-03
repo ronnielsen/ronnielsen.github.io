@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Div } from '../atoms';
 import styled, {keyframes} from 'styled-components'
 
@@ -71,19 +72,38 @@ const Tools = styled(Role)`
   padding-bottom: 16px;
 `;
 
+const Image = styled.img`
+  width: 100%;
+  height: 720px;
+  min-height: 100%;
+  object-fit: cover;
+  transition-duration: 250ms;
+  @media(max-width: 768px){
+    height: 420px;
+  }
+`;
+
 function Preview(props) {
   return (
     <Container {...props}>
-      {props.children}
+      <Image src={props.image ? './photos/' + props.image + '.jpg' : props.url}/>
       <Details>
-        <Name>{props.name || 'Sample Name'}</Name>
-        <Role>Role: {props.role || 'UI/UX Design, Branding, Front-end Development'}</Role>
-        <Tools>Tools: {props.tools || 'Sketch, React'}</Tools>
-        <Desc>{props.desc || 'The fox jumped over the bridge, to steal a hotdog.'}</Desc>
+        <Name>{props.title || '{title}'}</Name>
+        <Role>Role: {props.role || '{role}'}</Role>
+        <Tools>Tools: {props.tools || '{tools}'}</Tools>
+        <Desc>{props.desc || '{desc}'}</Desc>
         {props.links}
       </Details>
     </Container>
   );
+}
+
+Preview.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  role: PropTypes.string,
+  tools: PropTypes.string,
+  desc: PropTypes.string
 }
 
 export default Preview;

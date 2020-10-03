@@ -3,6 +3,11 @@ import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import styled, { ThemeProvider } from 'styled-components';
 import {lightTheme} from '../src/theme';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import '../src/index.css';
 
@@ -76,7 +81,12 @@ addParameters({
 addDecorator(withInfo);
 addDecorator(storyFn => (
   <ThemeProvider theme={lightTheme}>
-    <Story>{storyFn()}</Story>
+    <Story>
+      <Router>
+        <Switch>{storyFn()}
+        </Switch>
+      </Router>
+    </Story>
   </ThemeProvider>
 ))
 // automatically import all files ending in *.stories.js

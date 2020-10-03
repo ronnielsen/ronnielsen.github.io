@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import PropTypes from 'prop-types'
 import { Div, Button, Icon } from '../atoms'
 import styled, {keyframes} from 'styled-components'
 
@@ -11,7 +12,7 @@ to {
 }
 `;
 
-function Hero() {
+function Hero(props) {
   const [contact, showContact] = useState(false);
 
   const Contact = styled(Div)`
@@ -19,7 +20,7 @@ function Hero() {
     animation: ${fadeIn} 500ms linear;
   `;
 
-  const Hero = styled(Div)`
+  const Section = styled(Div)`
     height: 75vh;
     background: ${p => p.theme.colors.light};
     color: ${p => p.theme.colors.text};
@@ -80,9 +81,9 @@ function Hero() {
   `;
 
   return (
-    <Hero>
+    <Section {...props}>
       <Group>
-        I'm a <b>Product Designer</b> that can code front-end.
+        I'm a <b>{props.title || 'Product Designer'}</b> that can {props.skill || 'code front-end'}.
         {contact ? (<div/>) : (<StyledButton label="Get in touch" onClick={() => showContact(true)}/>)}
         <Contact my="8px">
           <ContactRow><Icon name="Mail" mr="16px"/> ronaldnielsen@gmail.com</ContactRow>
@@ -96,8 +97,13 @@ function Hero() {
           <StyledButton onClick={() => showContact(false)}>Got it!</StyledButton>
         </Contact>
       </Group>
-    </Hero>
+    </Section>
   );
+}
+
+Hero.propTypes = {
+  title: PropTypes.string,
+  skill: PropTypes.string,
 }
 
 export default Hero

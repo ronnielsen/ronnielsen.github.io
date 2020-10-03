@@ -46,7 +46,6 @@ function Select(props) {
     justify-content: flex-start;
     border-radius: 8px;
     padding: 8px 16px;
-    background-color: ${p => p.theme.colors.light};
     color: ${p => p.theme.colors.black};
     outline: none;
     box-shadow: ${p => isOpen ? (p.theme.colors.cardFocus) : (p.theme.colors.card)};
@@ -57,10 +56,9 @@ function Select(props) {
     &:hover {
       filter: brightness(.95);
     }
-    &:focus {
+    &:focus, &:active {
       box-shadow: 0px 0px 0px 4px ${p => p.theme.colors.focus};
       transition-duration: 400ms;
-      background-color: ${p => p.theme.colors.fill};
     }
   `;
 
@@ -79,7 +77,7 @@ function Select(props) {
     margin-top: 8px;
     padding: 8px 0px;
     border-radius: 8px;
-    background-color: ${p => p.theme.colors.fill};
+    background-color: ${p => p.theme.colors.white};
     box-shadow: ${p => p.theme.colors.card};
     box-sizing: border-box;
     color: ${p => p.theme.colors.text};
@@ -135,7 +133,7 @@ function Select(props) {
   return (
     <>
       <DropDownContainer>
-        <DropDownHeader onClick={toggling}>
+        <DropDownHeader onClick={toggling} bg={isOpen ? 'white' : 'fill'}>
           <Flex>{selectedOption || props.placeholder || "Select..."}</Flex>
           <FixedIcon size="24px" name="ChevronDown"/>
         </DropDownHeader>

@@ -19,7 +19,7 @@ export const lightTheme = {
         tab: '#F1F1F4',
         highlight: 'rgba(220,100,50,.5)',
         plain: 'rgba(51,51,204,.25)',
-        focus: 'rgba(113,113,225,1)',
+        focus: 'rgba(51,51,204,1)',
         card: '0px 1px 2px 1px rgba(0,0,0,.24)',
         cardFocus: '0px 0px 0px 3px rgba(113,113,225,1)',
     },
