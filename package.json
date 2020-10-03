@@ -27,11 +27,11 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-storybook": "build-storybook -s public",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build-storybook": "build-storybook -s public/storybook",
     "storybook": "start-storybook -p 9001 -c ./.storybook -s ./",
     "deploy-storybook": "storybook-to-ghpages",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "chromatic": "npx chromatic --project-token 2zlfvv30q22"
   },
   "eslintConfig": {
