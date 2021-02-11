@@ -63,17 +63,6 @@ const Row = styled(Div)`
   justify-content: center;
 `;
 
-const Image = styled.img`
-  width: 100%;
-  height: 720px;
-  min-height: 100%;
-  object-fit: cover;
-  transition-duration: 250ms;
-  @media(max-width: 768px){
-    height: 420px;
-  }
-`;
-
 const ButtonIcon = styled.img`
   height: 24px;
   width: 24px;

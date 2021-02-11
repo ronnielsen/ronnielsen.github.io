@@ -56,7 +56,7 @@ const Desc = styled(Text)`
 function InfoRow(props) {
   return (
     <Container {...props}>
-      <Bitmoji src={'./photos/bitmoji/' + (props.image || '1') + '.png'}/>
+      <Bitmoji src={'./photos/bitmoji/' + (props.img || '1') + '.png'}/>
       <FlexGroup>
         <Title value={props.title || '{title}'}/>
         <Desc value={props.desc || '{desc}'}/>

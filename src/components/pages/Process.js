@@ -1,17 +1,7 @@
 import React from 'react'
 import { Div, Text, Flex } from '../atoms'
 import { InfoRow} from '../molecules'
-import styled, {keyframes} from 'styled-components'
-
-const fadeIn = keyframes`
-from {
-  opacity: 0;
-}
-
-to {
-  opacity: 1;
-}
-`;
+import styled from 'styled-components'
 
 const Container = styled(Div)`
   height: 100%;
@@ -53,22 +43,22 @@ function Process(props) {
         <InfoRow
           img="3"
           title="3. Establish Design System"
-          desc="Early on I take to the wireframes and build a system of UI compoents around them in order to create consistancy from the start. I establish a foundation around things such as colors, typography, and essential UI components."
+          desc="Early on, I like to build a system of UI compoents based on the wireframes in order to create a consistant pattern for interaction throughout the project. I will also establish a foundation around things such as colors, typography, and essential UI components, that will permeate through the project."
         />
         <InfoRow
           img="4"
           title="4. Iteration, and Repeatition"
-          desc="From here I use Sketch/Figma/AdobeXD to layout these components onto artboards. I perfer to use an soft 8px grid to make ensure that my UI can create easily recognizable visual patterns."
+          desc="From here I use Sketch/Figma/AdobeXD to layout these components onto artboards. I perfer to use an soft 8px grid to make ensure that the UI creates easily recognizable visual patterns that will lead the user on their journey."
         />
         <InfoRow
           img="5"
           title="5. Prototyping & Revisions"
-          desc="Once I'm happy with the design, I like to create a rapid-prototype in React front-end, then revise until everyone is satisfied."
+          desc="Once all requirements are met with the deisgn, I like to create a rapid-prototype in React using styled-component, and styled-system. Then I revise until everyone is satisfied. Often the best UX refinements happen as you begin to use what you are building."
         />
         <InfoRow
           img="6"
           title="6. Development"
-          desc="This is my favorite part, making my designs real! I strive to create the most amount of UI with the least amount of code."
+          desc="This is my favorite part, making my designs real! I strive to create the most amount of UI with the least amount of code, and that means creating a library of reusable, and highly-customizable components that can be used throughout the project by myself or other developers."
         />
       </Content>
     </Container>

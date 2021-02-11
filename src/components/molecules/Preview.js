@@ -1,17 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Div } from '../atoms';
-import styled, {keyframes} from 'styled-components'
-
-const fadeIn = keyframes`
-from {
-  opacity: 0;
-}
-
-to {
-  opacity: 1;
-}
-`;
+import styled from 'styled-components'
 
 const Container = styled(Div)`
   display: flex;
@@ -24,9 +14,6 @@ const Container = styled(Div)`
   margin: 0px 32px 32px 32px;
   flex-direction: column;
   align-self: flex-start;
-  &:hover {
-    box-shadow: 0px 0px 0px 2px ${p => p.theme.colors.border};
-  }
   @media(max-width: 1023px){
     margin: 0px 16px 32px 16px;
   }
