@@ -120,34 +120,37 @@ function Home(props) {
             links={
               <div>
                 <Link
-                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  href="https://www.figma.com/file/k0hng6kEmDD63V59df9Pu1/Twitter"
                   bg="dark"
                   color="light"
                   mx="0px"
                   mb="0px"
                   mt="16px"
+                  target="_blank"
                 >
                   <ButtonIcon src="./photos/twitter.png" mr="8px"/>
                   Twitter Components
                 </Link>
                 <Link
-                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  href="https://www.figma.com/file/55y2wt9cP4e6IHoeu4IC91/Twitch"
                   bg="dark"
                   color="light"
                   mx="0px"
                   mb="0px"
                   mt="16px"
+                  target="_blank"
                 >
                   <ButtonIcon src="./photos/twitch.png" mr="8px"/>
                   Twitch Components
                 </Link>
                 <Link
-                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  href="https://www.figma.com/file/jmyv5jeariXTyhkeBxVt5R/YouTube"
                   bg="dark"
                   color="light"
                   mx="0px"
                   mb="0px"
                   mt="16px"
+                  target="_blank"
                 >
                   <ButtonIcon src="./photos/youtube.png" mr="8px"/>
                   YouTube Components
