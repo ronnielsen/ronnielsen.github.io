@@ -112,6 +112,50 @@ function Home(props) {
             }
           />
           <Preview
+            title="Figma Components"
+            desc="Here are examples of using a design system to create a handful of components. Figma has become my go-to application for creating UI. These samples show how I like to organize my components based on Atomic Design System ideals. When creating components, I focus on reusability, flexibility, and variables. Having a solid foundation allows me to create UI with an emphasises consistency throughout my projects."
+            role="Design"
+            tools="Figma"
+            image="figmapreview"
+            links={
+              <div>
+                <Link
+                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                >
+                  <ButtonIcon src="./photos/twitter.png" mr="8px"/>
+                  Twitter Components
+                </Link>
+                <Link
+                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                >
+                  <ButtonIcon src="./photos/twitch.png" mr="8px"/>
+                  Twitch Components
+                </Link>
+                <Link
+                  href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                >
+                  <ButtonIcon src="./photos/youtube.png" mr="8px"/>
+                  YouTube Components
+                </Link>
+              </div>
+            }
+          />
+          <Preview
             title="365Pay"
             desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app. This product was a challenge because of the diverse nature of its features; users could self-checkout with the camera, or order preppared food ahead of time, or connect to bluetooth devices such as vending machines to dispense items."
             role="Product Design and Front-end Styling"
