@@ -10,7 +10,7 @@ const Container = styled(Div)`
   width: 100%;
   overflow: hidden;
   text-align: left;
-  max-width: 740px;
+  max-width: 1044px;
   margin: 0px 32px 32px 32px;
   flex-direction: column;
   align-self: flex-start;
