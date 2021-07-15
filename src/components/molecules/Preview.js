@@ -19,6 +19,7 @@ const Container = styled(Div)`
   }
   @media(max-width: 767px){
     margin: 0px 0px 32px 0px;
+    border-radius: 0px;
   }
 `;
 
