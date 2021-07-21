@@ -99,16 +99,40 @@ function Home(props) {
             image="welcome-square"
             links={
               <Link
-                href="https://drive.google.com/uc?id=19_vcd6782p9x2fxl1G5KOTOUBIeK4Kvc&export=download"
+                href="https://www.sketch.com/s/c635b65d-27f3-4211-b318-fa087149ffa2"
                 bg="dark"
                 color="light"
                 mx="0px"
                 mb="0px"
                 mt="16px"
+                target="_blank"
               >
                 <ButtonIcon src="./photos/sketch.png" mr="8px"/>
-                Download Sketch File
+                View/Download Sketch File
               </Link>
+            }
+          />
+          <Preview
+            title="Admin Dashboard"
+            desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was honestly an embarrassment that our customers had no choice but to use. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout."
+            role="Product Design"
+            tools="Figma"
+            image="Overview"
+            links={
+              <div>
+                <Link
+                  href="https://www.figma.com/file/ZPcpwmFEHcjmkCLBr8yydv/Dashboard"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <ButtonIcon src="./photos/figma.png" mr="8px"/>
+                  View in Figma
+                </Link>
+              </div>
             }
           />
           <Preview
@@ -192,6 +216,7 @@ function Home(props) {
                 mx="0px"
                 mb="0px"
                 mt="16px"
+                target="_blank"
               >
                 <Icon name="Github" mr="8px"/>
                 Github Repo
