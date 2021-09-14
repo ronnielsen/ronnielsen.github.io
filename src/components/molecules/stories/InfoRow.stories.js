@@ -9,5 +9,5 @@ export const customized = () =>
   <InfoRow
     title="This is my title."
     desc="I would write a description here, but this is what you get."
-    image="2"
+    img="3"
   />;

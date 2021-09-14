@@ -25,7 +25,7 @@ const StyledInput = styled.input`
   font-size: ${p => p.theme.fontSizes.sm};
   line-height: ${p => p.theme.lineHeights.sm};
   width: 100%;
-  font-family: 'Nunito';
+  font-family: 'IBM Plex Sans';
   &:hover {
     filter: brightness(.95);
   }

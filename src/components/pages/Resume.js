@@ -29,7 +29,6 @@ const Img = styled.img`
   max-width: 720px;
   width: 100%;
   height: auto;
-  box-shadow: ${p => p.theme.colors.card};
   object-fit: fit;
 `;
 

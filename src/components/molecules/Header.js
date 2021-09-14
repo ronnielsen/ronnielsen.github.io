@@ -72,14 +72,35 @@ const Mode = styled(Div)`
 
 function Header(props) {
   return (
-    <Container bg="light" color="dark" p="xs">
-      <Name to="/">Ron Nielsen</Name>
-      <StyledLink to="/process">My process</StyledLink>
-      <StyledLink to="/resume">Resume</StyledLink>
-      <Mode ml="8px" onClick={() => props.themeToggler()}>
-      {props.theme === 'light' ? (<Icon name="Moon"/>) : (<Icon name="Sun"/>)}
-      </Mode>
-    </Container>
+      {...props.route === 'process' ? (
+        <Container bg="light" color="dark" p="xs">
+          <Name to="/">Ron Nielsen</Name>
+          <StyledLink to="/">Portfolio</StyledLink>
+          <StyledLink to="/resume">Resume</StyledLink>
+          <Mode ml="8px" onClick={() => props.themeToggler()}>
+            {props.theme === 'light' ? (<Icon name="Moon"/>) : (<Icon name="Sun"/>)}
+          </Mode>
+        </Container>
+      ) : props.route === 'resume' ? (
+        <Container bg="light" color="dark" p="xs">
+          <Name to="/">Ron Nielsen</Name>
+          <StyledLink to="/">Portfolio</StyledLink>
+          <StyledLink to="/process">My process</StyledLink>
+          <Mode ml="8px" onClick={() => props.themeToggler()}>
+            {props.theme === 'light' ? (<Icon name="Moon"/>) : (<Icon name="Sun"/>)}
+          </Mode>
+        </Container>
+      ) : (
+        <Container bg="light" color="dark" p="xs">
+          <Name to="/">Ron Nielsen</Name>
+          <StyledLink to="/process">My process</StyledLink>
+          <StyledLink to="/resume">Resume</StyledLink>
+          <Mode ml="8px" onClick={() => props.themeToggler()}>
+            {props.theme === 'light' ? (<Icon name="Moon"/>) : (<Icon name="Sun"/>)}
+          </Mode>
+        </Container>
+      )
+    }
   );
 }
 

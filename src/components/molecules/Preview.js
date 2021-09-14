@@ -6,7 +6,6 @@ import styled from 'styled-components'
 const Container = styled(Div)`
   display: flex;
   border-radius: 32px;
-  box-shadow: ${p => p.theme.colors.card};
   width: 100%;
   overflow: hidden;
   text-align: left;
@@ -18,7 +17,7 @@ const Container = styled(Div)`
     margin: 0px 16px 32px 16px;
   }
   @media(max-width: 767px){
-    margin: 0px 0px 32px 0px;
+    margin: 0px 0px 64px 0px;
     border-radius: 0px;
   }
 `;
@@ -74,12 +73,12 @@ const Image = styled.img`
 function Preview(props) {
   return (
     <Container {...props}>
-      <Image src={props.image ? './photos/' + props.image + '.jpg' : props.url} height={'100%'} width={'100%'}/>
+      <Image src={props.image ? 'https://ronnielsen.github.io/photos/' + props.image + '.jpg' : props.url} height={'100%'} width={'100%'}/>
       <Details>
-        <Name>{props.title || '{title}'}</Name>
-        <Role>Role: {props.role || '{role}'}</Role>
-        <Tools>Tools: {props.tools || '{tools}'}</Tools>
-        <Desc>{props.desc || '{desc}'}</Desc>
+        <Name>{props.title || 'Title'}</Name>
+        <Role>Role: {props.role || 'Role'}</Role>
+        <Tools>Tools: {props.tools || 'Tools used'}</Tools>
+        <Desc>{props.desc || 'A nice description'}</Desc>
         {props.links}
       </Details>
     </Container>

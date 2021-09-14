@@ -6,7 +6,6 @@ import styled from 'styled-components'
 const Container = styled(Div)`
   display: flex;
   border-radius: 32px;
-  box-shadow: ${p => p.theme.colors.card};
   background: ${p => p.theme.colors.white};
   width: 100%;
   overflow: hidden;
@@ -14,14 +13,13 @@ const Container = styled(Div)`
   max-width: 740px;
   margin: 0px 32px 32px 32px;
   flex-direction: row;
-  &:hover {
-    box-shadow: 0px 0px 0px 2px ${p => p.theme.colors.border};
-  }
+  box-sizing: border-box;
   @media(max-width: 1023px){
     margin: 0px 16px 16px 16px;
   }
   @media(max-width: 767px){
-    margin: 0px 0px 16px 0px;
+    margin: 2px 0px 2px 0px;
+    border-radius: 0px;
   }
 `;
 
@@ -48,25 +46,25 @@ const Title = styled(Text)`
 `;
 
 const Desc = styled(Text)`
-  font-size: 14px;
-  line-height: 24px;
-  color: ${p => p.theme.colors.text};
+  font-size: 18px;
+  line-height: 28px;
+  color: ${p => p.theme.colors.secondaryText};
 `;
 
 function InfoRow(props) {
   return (
     <Container {...props}>
-      <Bitmoji src={'./photos/bitmoji/' + (props.img || '1') + '.png'}/>
+      <Bitmoji src={'https://ronnielsen.github.io/photos/bitmoji/' + (props.img || '1') + '.png'}/>
       <FlexGroup>
-        <Title value={props.title || '{title}'}/>
-        <Desc value={props.desc || '{desc}'}/>
+        <Title value={props.title || 'Title'}/>
+        <Desc value={props.desc || 'A nice description.'}/>
       </FlexGroup>
     </Container>
   );
 }
 
 InfoRow.propTypes = {
-  image: PropTypes.string,
+  img: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string
 }

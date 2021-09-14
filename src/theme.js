@@ -1,9 +1,9 @@
 export const lightTheme = {
     colors: {
-        dark: '#0a090f',
-        light: '#F1F1F4',
+        dark: '#1a191f',
+        light: '#FFFFFF',
         black: '#000000',
-        white: '#FFFFFF',
+        white: '#E1E1E4',
         background: '#FFFFFF',
         fill: '#F1F1F4',
         grey: '#AAAAB9',
@@ -88,11 +88,11 @@ export const lightTheme = {
 
 export const darkTheme = {
     colors: {
-        dark: '#F1F1F4',
-        light: '#0a090f',
+        dark: '#E1E1E4',
+        light: '#1a191f',
         black: '#FFFFFF',
         white: '#000000',
-        background: '#0a090f',
+        background: '#1a191f',
         fill: '#0a090f',
         grey: '#AAAAB9',
         primary: '#3333CC',

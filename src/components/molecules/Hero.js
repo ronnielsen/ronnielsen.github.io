@@ -21,7 +21,7 @@ function Hero(props) {
   `;
 
   const Section = styled(Div)`
-    height: 75vh;
+    height: 70vh;
     background: ${p => p.theme.colors.light};
     color: ${p => p.theme.colors.text};
     display: flex;

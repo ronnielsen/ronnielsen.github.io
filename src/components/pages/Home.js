@@ -93,13 +93,13 @@ function Home(props) {
         <Row>
           <Preview
             title="Design System Foundation"
-            desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create a hi-fi wireframes and mockups. I also coded this system in React as a framework for this website, and future projects."
+            desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create hi-fi wireframes and mockups. I also coded this system in React as a framework for this website and future projects."
             role="Design and Development"
-            tools="React, Storybook, Sketch"
+            tools="React, Storybook, Figma"
             image="welcome-square"
             links={
               <Link
-                href="https://www.sketch.com/s/c635b65d-27f3-4211-b318-fa087149ffa2"
+                href="https://www.figma.com/file/1womk4oSoioTtGNahFuwRo/Design-System-Foundation?node-id=2%3A121"
                 bg="dark"
                 color="light"
                 mx="0px"
@@ -107,14 +107,14 @@ function Home(props) {
                 mt="16px"
                 target="_blank"
               >
-                <ButtonIcon src="./photos/sketch.png" mr="8px"/>
-                View/Download Sketch File
+                <ButtonIcon src="./photos/figma.png" mr="8px"/>
+                View in Figma
               </Link>
             }
           />
           <Preview
             title="Admin Dashboard"
-            desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was honestly an embarrassment that our customers had no choice but to use. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout."
+            desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was not up to the standards that I wanted to provide to our customers. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout."
             role="Product Design"
             tools="Figma"
             image="Overview"
@@ -137,7 +137,7 @@ function Home(props) {
           />
           <Preview
             title="365Pay"
-            desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to front-end styling in React Native app. This product was a challenge because of the diverse nature of its features; users could self-checkout with the camera, or order preppared food ahead of time, or connect to bluetooth devices such as vending machines to dispense items."
+            desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to the front-end development by creating reusable component. This product was a challenge because of the diverse nature of its features; users could self-checkout with the camera, or order preppared food ahead of time, or connect to bluetooth devices such as vending machines to dispense items, and much more."
             role="Product Design and Front-end Styling"
             tools="React Native, Sketch, Adobe XD, Overflow, Invision"
             image="mobile"
