@@ -98,18 +98,32 @@ function Home(props) {
             tools="React, Storybook, Figma"
             image="welcome-square"
             links={
-              <Link
-                href="https://www.figma.com/file/1womk4oSoioTtGNahFuwRo/Design-System-Foundation?node-id=2%3A121"
-                bg="dark"
-                color="light"
-                mx="0px"
-                mb="0px"
-                mt="16px"
-                target="_blank"
-              >
-                <ButtonIcon src="./photos/figma.png" mr="8px"/>
-                View in Figma
-              </Link>
+              <div>
+                <Link
+                  href="https://www.figma.com/file/1womk4oSoioTtGNahFuwRo/Design-System-Foundation?node-id=108%3A95"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <ButtonIcon src="./photos/figma.png" mr="8px"/>
+                  View in Figma
+                </Link>
+                <Link
+                  href="https://www.figma.com/community/file/1007839545438281461/Design-System-Foundation"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <ButtonIcon src="./photos/figma.png" mr="8px"/>
+                  Figma Community Page
+                </Link>
+              </div>
             }
           />
           <Preview
