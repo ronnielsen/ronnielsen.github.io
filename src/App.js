@@ -16,7 +16,7 @@ function App(props) {
   const [theme, setTheme] = useState('dark')
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000)
+    setTimeout(() => setLoading(false), 2500)
   }, [])
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');

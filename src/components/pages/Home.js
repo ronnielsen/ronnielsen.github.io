@@ -127,6 +127,13 @@ function Home(props) {
             }
           />
           <Preview
+            title="Self Checkout 2020"
+            desc="Having created self checkout products since 2014, I wanted to use everything I had learned to create one of the most clean and intuitive self checkout platforms ever. Self Checkout is often over-complicated, with too many options for users presented in an obtuse way. With Self Checkout 2020, the layout and hierarchy is presented in a logical and orderly way, based around the thought process of an average user. I revisited feedback from our users to organize the UX in a familiar way by ordering the elements around what users objectives were. The workflow was simplified to add items, then pay; with no fluff in-between. I also addressed the needs of our clients by adding long desired features such as full-screen video ads, persistent ad space, featured products, and reachable intuitive buttons. My goal was to lead the users on a journey through sparse use of colors as a guide for completing their goals with no filler. Myself and another engineer fully coded this project in less than a month, with thorough UI documentation in Storybook for other developers to use when working on this project."
+            role="Product Design, Front-end Development"
+            tools="Sketch, React"
+            image="selfcheckout"
+          />
+          <Preview
             title="Admin Dashboard"
             desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was not up to the standards that I wanted to provide to our customers. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout."
             role="Product Design"

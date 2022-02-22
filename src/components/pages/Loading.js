@@ -9,17 +9,17 @@ const fadeOut = keyframes`
 `;
 
 const wave = keyframes`
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  70% { transform: rotate(14.0deg) }
-  80% { transform: rotate(-8.0deg) }
-  90% { transform: rotate(14.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% { transform: rotate( 0.0deg); -webkit-transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg); -webkit-transform: rotate( 14.0deg) }
+  20% { transform: rotate(-8.0deg); -webkit-transform: rotate( -8.0deg) }
+  30% { transform: rotate(14.0deg); -webkit-transform: rotate( 14.0deg) }
+  40% { transform: rotate(-4.0deg); -webkit-transform: rotate( -4.0deg) }
+  50% { transform: rotate(10.0deg); -webkit-transform: rotate( 10.0deg) }
+  60% { transform: rotate( 0.0deg); -webkit-transform: rotate( 0.0deg) }
+  70% { transform: rotate(14.0deg); -webkit-transform: rotate( 14.0deg) }
+  80% { transform: rotate(-8.0deg); -webkit-transform: rotate( -8.0deg) }
+  90% { transform: rotate(14.0deg); -webkit-transform: rotate( 14.0deg) }
+  100% { transform: rotate( 0.0deg); -webkit-transform: rotate( 0.0deg) }
 `;
 
 const HandWave = styled(Div)`
@@ -27,12 +27,12 @@ const HandWave = styled(Div)`
   font-size: 64px;
   margin-right: 16px;
   @media(max-width: 767px){
-    font-size: 120px;
+    font-size: 80px;
   }
 `;
 
 const Container = styled(Div)`
-  animation: ${fadeOut} 2s linear;
+  animation: ${fadeOut} 2.5s linear;
   height: 100vh;
   display: flex;
   justify-content: center;

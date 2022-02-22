@@ -11,6 +11,9 @@ const Content = styled(Flex)`
   align-items: center;
   justify-content: center;
   padding-bottom: 32px;
+  @media (max-width: 767px){
+    padding-bottom: 0px;
+  }
 `;
 
 const Label = styled(Text)`
@@ -48,7 +51,7 @@ function Process(props) {
         <InfoRow
           img="4"
           title="4. Iteration, and Repeatition"
-          desc="From here I use Sketch/Figma/AdobeXD to layout these components onto artboards. I perfer to use an soft 8px grid to make ensure that the UI creates easily recognizable visual patterns that will lead the user on their journey."
+          desc="From here I use Sketch/Figma/AdobeXD to layout these components onto artboards. I perfer to use an soft 8px grid to ensure that the UI creates easily recognizable visual patterns that will lead the user on their journey."
         />
         <InfoRow
           img="5"
