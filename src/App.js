@@ -29,7 +29,7 @@ function App(props) {
             <Route exact path='/'>
               {loading === true ? (<Loading/>) : (<></>)}
               <Header themeToggler={themeToggler} theme={theme} route=''/>
-              <Home/>
+              <Home theme={theme}/>
             </Route>
             <Route path='/process'>
               <Header themeToggler={themeToggler} theme={theme} route='process'/>

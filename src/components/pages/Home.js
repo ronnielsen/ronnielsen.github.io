@@ -92,6 +92,76 @@ function Home(props) {
         <Label mb="32px">Portfolio</Label>
         <Row>
           <Preview
+            title="Admin Dashboard"
+            desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was not up to the standards that I wanted to provide to our customers. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout. Checkout the GitHub link below to see how I made this site. Only the Home page is available in this demo."
+            role="UI Development / Product Design"
+            tools="Figma, React"
+            image={props.theme === 'light' ? "overviewlight" : "overview"}
+            links={
+              <div>
+                <Link
+                  href="https://ronnielsen.github.io/dashboard"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <Icon name="Globe" mr="8px"/>
+                  View Demo Site
+                </Link>
+                <Link
+                  href="https://github.com/ronnielsen/dashboard"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <Icon name="Github" mr="8px"/>
+                  View GitHub
+                </Link>
+              </div>
+            }
+          />
+          <Preview
+            title="Adopty"
+            desc="Adopty is a coding exercise project that I developed in a day, which is an example of how I develop responsive and reusable UI components rapidly. This project uses styled-components to create a dark/light theme, and flex-box to create a highly responsive grid pattern for this web homepage. Checkout the GitHub link below to see how I made it."
+            role="UI Development / Product Design"
+            tools="React"
+            image={props.theme === 'light' ? "adoptylight" : "adopty"}
+            links={
+              <div>
+                <Link
+                  href="https://ronnielsen.github.io/adopty"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <Icon name="Globe" mr="8px"/>
+                  View Demo Site
+                </Link>
+                <Link
+                  href="https://github.com/ronnielsen/adopty"
+                  bg="dark"
+                  color="light"
+                  mx="0px"
+                  mb="0px"
+                  mt="16px"
+                  target="_blank"
+                >
+                  <Icon name="Github" mr="8px"/>
+                  View GitHub
+                </Link>
+              </div>
+            }
+          />
+          <Preview
             title="Design System Foundation"
             desc="Driven by the need to quickly jump into new projects, I created this foundational system of UI components called Design System Foundation. The foundations of the system are comprised of colors, typography, and icons. I used these foundations to create a small library of flexible UI symbols/components. These components can be used to quickly create hi-fi wireframes and mockups. I also coded this system in React as a framework for this website and future projects."
             role="Design and Development"
@@ -134,29 +204,6 @@ function Home(props) {
             image="selfcheckout"
           />
           <Preview
-            title="Admin Dashboard"
-            desc="This project began as a personal initiative by myself to update the UX and UI of our admin platform. The current admin site had UI that was created by several disconnected teams, and was not up to the standards that I wanted to provide to our customers. My goal was to streamline the UX, pulling useful information straight to the home page to be seen at a glance. The dashboard were designed with the intention that each user could customize their home page to show data that is relevant to them. I designed this dashboard with Dark Mode in mind, utilizing an 8px grid, and a responsive tiled layout."
-            role="Product Design"
-            tools="Figma"
-            image="Overview"
-            links={
-              <div>
-                <Link
-                  href="https://www.figma.com/file/ZPcpwmFEHcjmkCLBr8yydv/Dashboard"
-                  bg="dark"
-                  color="light"
-                  mx="0px"
-                  mb="0px"
-                  mt="16px"
-                  target="_blank"
-                >
-                  <ButtonIcon src="./photos/figma.png" mr="8px"/>
-                  View in Figma
-                </Link>
-              </div>
-            }
-          />
-          <Preview
             title="365Pay"
             desc="I became involved in this project once developers had established their own style, which had taken direction inspiration from other apps such as Outlook, Starbucks, and Whole Foods. My first task was to establish a color template in order to be able to re-skin this app for other clients. Then I recreated what had already been created in Sketch, and established a reusable library of UI symbols that I could then push into a more unique a distinctive direction that also united the look-and-feel of all of their other products. For each of the unique workflow requirements, I worked with Product Managers on getting the primary workflows correct using Overflow, then I created UI in Sketch, and created clickable prototypes in Invision. I also contributed to the front-end development by creating reusable component. This product was a challenge because of the diverse nature of its features; users could self-checkout with the camera, or order preppared food ahead of time, or connect to bluetooth devices such as vending machines to dispense items, and much more."
             role="Product Design and Front-end Styling"
@@ -176,6 +223,26 @@ function Home(props) {
             role="Product Design, Front-end Development"
             tools="React, Storybook, Sketch"
             image="design-system-min"
+          />
+          <Preview
+            title="This Website"
+            desc="I made this website from scratch in React, using the Design System Foundation referenced above. I wanted to challenge myself to handle a dark/light theme toggle from scratch. Checkout the repo to see what I used."
+            role="Product Design, Front-end Development"
+            tools="React, Storybook, Figma"
+            image="portfolio"
+            links={
+              <Link
+                href="https://github.com/ronnielsen/ronnielsen.github.io"
+                bg="dark"
+                mx="0px"
+                mb="0px"
+                mt="16px"
+                target="_blank"
+              >
+                <Icon name="Github" mr="8px"/>
+                Github Repo
+              </Link>
+            }
           />
           <Preview
             title="Figma Components"
@@ -222,26 +289,6 @@ function Home(props) {
                   YouTube Components
                 </Link>
               </div>
-            }
-          />
-          <Preview
-            title="This Website"
-            desc="I made this website from scratch in React, using the Design System Foundation referenced above. I wanted to challenge myself to handle a dark/light theme toggle from scratch. Checkout the repo to see what I used."
-            role="Product Design, Front-end Development"
-            tools="React, Storybook, Figma"
-            image="portfolio"
-            links={
-              <Link
-                href="https://github.com/ronnielsen/ronnielsen.github.io"
-                bg="dark"
-                mx="0px"
-                mb="0px"
-                mt="16px"
-                target="_blank"
-              >
-                <Icon name="Github" mr="8px"/>
-                Github Repo
-              </Link>
             }
           />
         </Row>

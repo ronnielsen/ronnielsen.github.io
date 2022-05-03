@@ -49,7 +49,7 @@ function Resume(props) {
       <Content>
         <Label value="Resumé"/>
         <ButtonLink
-          href="https://github.com/ronnielsen/ronnielsen.github.io/raw/master/public/photos/ronnielsen_resume.pdf"
+          href="https://github.com/ronnielsen/ronnielsen.github.io/raw/master/public/photos/nielsen_resume.pdf"
            mb="40px"
          >
           <Icon name="Download" size="32px" mr="8px"/>

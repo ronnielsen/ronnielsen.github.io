@@ -73,7 +73,7 @@ const Image = styled.img`
 function Preview(props) {
   return (
     <Container {...props}>
-      <Image src={props.image ? 'https://ronnielsen.github.io/photos/' + props.image + '.jpg' : props.url} height={'100%'} width={'100%'}/>
+      <Image src={props.image ? './photos/' + props.image + '.jpg' : props.url} height={'100%'} width={'100%'}/>
       <Details>
         <Name>{props.title || 'Title'}</Name>
         <Role>Role: {props.role || 'Role'}</Role>
