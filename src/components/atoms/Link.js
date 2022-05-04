@@ -90,7 +90,13 @@ function Link(props) {
     <StyledLink
       m="xs"
       borderRadius="md"
-      {...props}>
+      {...props}
+      bg="dark"
+      color="light"
+      mx="0px"
+      mb="0px"
+      mt="16px"
+      >
       {props.prepend}
       {props.label}
       {props.children}
