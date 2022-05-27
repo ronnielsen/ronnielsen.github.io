@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -13,7 +13,7 @@ import { ThemeProvider } from 'styled-components';
 import {lightTheme, darkTheme} from './theme';
 
 function App(props) {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     setTimeout(() => setLoading(false), 2500)
@@ -27,7 +27,7 @@ function App(props) {
         <Router basename='/'>
           <Switch>
             <Route exact path='/'>
-              {loading === true ? (<Loading/>) : (<></>)}
+              {loading && <Loading/>}
               <Header themeToggler={themeToggler} theme={theme} route=''/>
               <Home theme={theme}/>
             </Route>

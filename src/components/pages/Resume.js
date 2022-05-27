@@ -1,5 +1,5 @@
 import React from 'react'
-import { Div, Text, Flex, Link, Icon } from '../atoms'
+import { Div, Flex, Link, Icon } from '../atoms'
 import styled from 'styled-components'
 
 const Container = styled(Div)`
@@ -10,19 +10,6 @@ const Content = styled(Flex)`
   align-items: center;
   padding-bottom: 32px;
   display: flex;
-`;
-
-const Label = styled(Text)`
-  border-bottom: 1px solid ${p => p.theme.colors.text};
-  width: auto;
-  padding: 8px 16px;
-  margin: 32px 0px 32px 0px;
-  display: inline-block;
-  font-size: 24px;
-  line-height: 32px;
-  @media(max-width: 767px){
-    margin-top: 16px;
-  }
 `;
 
 const Img = styled.img`
@@ -38,22 +25,20 @@ const ButtonLink = styled(Link)`
   border-radius: 45px;
   background: ${p => p.theme.colors.dark};
   color: ${p => p.theme.colors.lightText};
+  margin-bottom: 40px;
   &:hover {
     background: ${p => p.theme.colors.success};
   }
 `;
 
 function Resume(props) {
+  const resumeUrl = "https://github.com/ronnielsen/ronnielsen.github.io/raw/master/public/photos/nielsen_resume.pdf"
   return (
     <Container bg="light">
       <Content>
-        <Label value="Resumé"/>
-        <ButtonLink
-          href="https://github.com/ronnielsen/ronnielsen.github.io/raw/master/public/photos/nielsen_resume.pdf"
-           mb="40px"
-         >
+        <ButtonLink href={resumeUrl}>
           <Icon name="Download" size="32px" mr="8px"/>
-          Download PDF
+          Download Resume
         </ButtonLink>
         {props.theme === 'light' ? (<Img src="./photos/ResumeLight.jpg"/>) : (<Img src="./photos/ResumeDark.jpg"/>) }
       </Content>

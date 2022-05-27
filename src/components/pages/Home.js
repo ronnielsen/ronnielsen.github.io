@@ -164,18 +164,18 @@ function Home(props) {
             image="mobile"
           />
           <Preview
-            title={portfolio[5].title}
-            desc={portfolio[5].desc}
-            role={portfolio[5].role}
-            tools={portfolio[5].tools}
-            image="eatit"
-          />
-          <Preview
             title={portfolio[6].title}
             desc={portfolio[6].desc}
             role={portfolio[6].role}
             tools={portfolio[6].tools}
             image="design-system-min"
+          />
+          <Preview
+            title={portfolio[5].title}
+            desc={portfolio[5].desc}
+            role={portfolio[5].role}
+            tools={portfolio[5].tools}
+            image="eatit"
           />
           <Preview
             title={portfolio[7].title}
